@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: rgb(195, 130, 255);
+}
+
+.card {
+    width: 60%;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(192, 192, 192);
+    background-color: blanchedalmond;
+    margin: 20px;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.card>a>p {
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(117, 117, 117)
+}
+
+.card>img {
+    width: 100%;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+
+}
+
+.all-page {
+    display: grid;
+    grid-template-columns: repeat(12);
+}
+
+/*
+for panels
+*/
+
+.top-menu,
+.bottom-menu {
+    background-color: antiquewhite;
+    padding: 1em;
+}
+
+
+.top-menu {
+    grid-column: 1/2;
+}
+
+.main {
+    grid-column: 2/12;
+}
+
+.bottom-menu {
+    grid-column: 12/13;
+}
+
+
+/*
+media things
+*/
+
+@media (max-width: 1000px) {
+    .all-page {
+        display: block;
+    }
+}
+
+@media (max-width: 800px) {
+    
+
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width:100%;
+        padding:0;
+        margin:0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}

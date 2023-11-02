@@ -1,0 +1,63 @@
+.nav-bar {
+    background-color: rgb(97, 97, 97);
+    display: flex;
+}
+
+.nav-bar a {
+    display:block;
+    color: antiquewhite;
+    font-size: 1.5em;
+    padding: 7px;
+
+}
+
+.nav-bar button {
+    font-size: 3em;
+    background-color: rgb(97, 97, 97);
+    color:antiquewhite;
+    border-width: 0px;
+    padding-bottom: 3px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex
+}
+
+.nav-bar a:hover {
+    background-color: antiquewhite;
+    color: rgb(97, 97, 97);
+}
+
+
+.nav-bar button:hover {
+    background-color: antiquewhite;
+    color: rgb(97, 97, 97);
+}
+
+
+
+@media (max-width: 2900px) {
+    .nav-bar button {
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: 900px) {
+    .nav-list {
+        display: none;
+    }
+
+    .nav-bar button {
+        display: block;
+    }
+
+    .drop:hover .nav-list{
+        display: block;
+        position: absolute;
+        background-color: rgb(97, 97, 97);
+    }
+}
